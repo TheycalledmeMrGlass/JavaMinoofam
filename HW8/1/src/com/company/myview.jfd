@@ -1,0 +1,112 @@
+JFDML JFormDesigner: "7.0.2.0.298" Java: "11.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "form"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "namefield"
+				"text": "name:"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "namefieldMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 10
+				"width": 110
+				"height": 40
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "agefield"
+				"text": "age:"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "agefieldMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 35
+				"y": 60
+				"width": 120
+				"height": 35
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "fathernameField"
+				"text": "fathername:"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "fathernameFieldMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 40
+				"y": 110
+				"width": 115
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "CityField"
+				"text": "city:"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "CityFieldMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 40
+				"y": 155
+				"width": 135
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "TakhasosField"
+				"text": "takhasos:"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "TakhasosFieldMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 45
+				"y": 205
+				"width": 139
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "formButton"
+				"text": "Done"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "DoneButtonMouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "formButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 255
+				"y": 50
+				"height": 105
+				"width": 113
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 130, 15 )
+			"size": new java.awt.Dimension( 400, 275 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "Successdialog"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "SuccessText"
+				"text": "Finishing"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 30
+				"width": 154
+				"height": 75
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "SuccessButton"
+				"text": "Done"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "SuccessButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 50
+				"y": 155
+				"width": 163
+				"height": 45
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 575, 10 )
+			"size": new java.awt.Dimension( 245, 275 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "errordialog"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "errortext"
+				"text": "Thank you"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 90
+				"y": 50
+				"width": 190
+				"height": 65
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 335, 355 )
+			"size": new java.awt.Dimension( 390, 200 )
+		} )
+	}
+}
