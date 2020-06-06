@@ -1,0 +1,142 @@
+JFDML JFormDesigner: "7.0.2.0.298" Java: "11.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "SaveFrame"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "Namefield"
+				"text": "Name:"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "NamefieldMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 20
+				"y": 20
+				"width": 164
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "FamilyField"
+				"text": "FamilyName:"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "FamilyFieldMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 15
+				"y": 80
+				"width": 155
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "FatherField"
+				"text": "Fathername:"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "FatherFieldMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 145
+				"width": 175
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "DoneButton"
+				"text": "Done"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "DoneButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 110
+				"y": 235
+				"width": 108
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 290, 300 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "Failed"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "FailedText"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 20
+				"y": 30
+				"width": 130
+				"height": 65
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 345, 20 )
+			"size": new java.awt.Dimension( 200, 160 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "MainFrame"
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "SaveButton"
+				"text": "Save"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "SaveButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 35
+				"y": 40
+				"width": 118
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "ShowButton"
+				"text": "Show"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "ShowButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 35
+				"y": 105
+				"width": 138
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 65, 320 )
+			"size": new java.awt.Dimension( 180, 185 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "Success"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "SuccessText"
+				"text": "text"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 25
+				"y": 5
+				"width": 120
+				"height": 50
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "CloseButton"
+				"text": "Close"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 50
+				"y": 135
+				"width": 133
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "closeButton"
+				"text": "close"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "closeButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 45
+				"y": 80
+				"width": 103
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 350, 235 )
+			"size": new java.awt.Dimension( 200, 145 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "Show"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "ShowText"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 10
+				"width": 175
+				"height": 40
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "doneButton"
+				"text": "Done"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "doneButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 55
+				"y": 85
+				"width": 123
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 325, 390 )
+			"size": new java.awt.Dimension( 220, 155 )
+		} )
+	}
+}
